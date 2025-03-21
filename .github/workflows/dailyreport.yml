@@ -226,3 +226,9 @@ jobs:
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
         run: python scraper.py
+        
+      - name: Upload Debug Homepage Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-homepage
+          path: debug_homepage.html
