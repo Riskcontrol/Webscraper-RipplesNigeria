@@ -342,7 +342,7 @@ from email.mime.application import MIMEApplication
 # Initialize Groq API Client
 # -------------------------------
 # Make sure the async_groq package is installed.
-from async_groq import AsyncGroq
+from groq import AsyncGroq
 
 client = AsyncGroq(api_key="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")
 
