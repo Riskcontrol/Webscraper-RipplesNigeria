@@ -651,7 +651,7 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 # -------------------------------
 # Target URL for Ripples Nigeria
 # -------------------------------
-url = 'https://www.ripplesnigeria.com/'
+url = 'https://www.ripplesnigeria.com/feed/'
 
 try:
     driver.get(url)
@@ -713,13 +713,13 @@ try:
         df.to_csv(filename, index=False)
 
         # Email configuration (update credentials as needed)
-        sender_email = 'nofiugodwin17@gmail.com'
+        sender_email = 'rcsnbc@gmail.com'
         receiver_email = 'nofiumoruf17@gmail.com'
         subject = "Ripples Nigeria Daily News Headlines"
         body = "Please find attached the latest news headlines with categorized information and summaries."
         smtp_server = "smtp.gmail.com"
         smtp_port = 465  # SSL port for Gmail
-        smtp_password = 'bmba acnn xwij dgch'  # Your app-specific password
+        smtp_password = 'wkhf nxrn uigo uxom'  # Your app-specific password
 
         send_email(sender_email, receiver_email, subject, body, filename, smtp_server, smtp_port, smtp_password)
         print("Scraping, categorization, summarization, and email sent successfully.")
