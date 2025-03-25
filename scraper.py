@@ -330,7 +330,7 @@ if data:
 
     send_email(
         sender_email=os.environ.get('USER_EMAIL'),
-        receiver_email='nofiumoruf17@gmail.com',
+        receiver_email='riskcontrolservicesnig@gmail.com',
         subject="Ripples Nigeria Daily News",
         body="Attached is today's news summary with risk indicators.",
         attachment_path=filename,
