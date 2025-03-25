@@ -329,14 +329,14 @@ if data:
     df.to_csv(filename, index=False)
 
     send_email(
-        sender_email='rcsnbc@gmail.com',
+        sender_email=os.environ.get('USER_EMAIL'),
         receiver_email='nofiumoruf17@gmail.com',
         subject="Ripples Nigeria Daily News",
         body="Attached is today's news summary with risk indicators.",
         attachment_path=filename,
         smtp_server="smtp.gmail.com",
         smtp_port=465,
-        smtp_password='wkhf nxrn uigo uxom'
+        smtp_password=os.environ.get('USER_PASSWORD')
     )
     print("RSS parsing, summarization, and email sent successfully.")
 else:
